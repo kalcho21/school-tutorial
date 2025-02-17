@@ -5,9 +5,12 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            Print();
+            int n = 0;
+            Print(n);
         }
-        static void Print()
-        { Console.WriteLine(); }
+        static void Print(int n)
+        {
+            Console.WriteLine($"{n++} {Console.ReadLine()}"); 
+        }
     }
 }
